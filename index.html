@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Portfolio</title>
+    <meta name="description" content="This is a Portfolio site that I made for my assignment ,
+     this Portfolio also showcases me and my projects.">
+
+
+
+
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href ="styles.css">
+    
+</head>
+<body>
+    <h1>Full-Stack Developer Portfolio</h1>
+    <!-- NavBar-->
+     <nav id="top">
+        
+        <div class="left">
+            <a href="/" aria-label="This is my name.">Timur Masri</a>
+        </div>
+
+        <div class="right">
+            
+
+            <a href="https://github.com/TimurMg" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                <i class="fa-brands fa-github"></i>
+                <Span>Github</Span>
+            </a>
+
+            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my facebook page">
+                <i class="fa-brands fa-facebook"></i>
+                <Span>facebook</Span>
+            </a>
+
+            <a href="mailto:masritimur2@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Mail to my email">
+                <i class="fa-solid fa-envelope"></i>
+                <Span>gmail</Span>
+            </a>
+
+            
+        </div>
+
+     </nav>
+     <div class="dark-toggle-wrapper">
+        <button id="darkToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon">
+                <span>Dark Mode</span>
+            </i></button>
+     </div>
+     <main>
+        <!-- Section1:Person -->
+        <section class="person-section">
+            <div class="text">
+                <h2>Hi , I'm Timur 👋</h2>
+                <p>I'm 18 years old and I'm currently learning Full-Stack development, I know computer science and coding , I know several coding paradigms (For example OOP and Event-driven programming ,procedural programming) and I also know several coding languages (For example Assembly and c and c# ,java). </p>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="images/headshot.webp" loading="lazy" alt="Timur masri headshot">
+            </div>
+        </section>
+
+        <!-- Section2:Skills -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                    I briefly mentioned previously about what I know but I didn't include it here because here I'm gonna mention my skills for Full-Stack development which is: Html5 and CSS and Im currently learning JavaScript.
+            </div>
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/html-logo.webp" loading="lazy" alt="html logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/css-logo.webp" loading="lazy" alt="css logo">
+                    <span>CSS</span>
+                </div>
+            </div>
+        </section>
+
+            <!-- Section3:Projects -->
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+
+        <!-- Example Project #1 -->
+         <div class="projects-flex">
+            <article class="project">
+                <h3>My Awesome App</h3> 
+                <img src="images/awesome-app.png" loading="lazy" alt="Screenshot of My Awesome App">
+                    <p>A brief description of what it does and why it's cool.</p>
+                    <ul>
+                        <li><strong>Tech:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Challenge:</strong> Building a fully responsive grid</li>
+                    </ul>
+                    <p>
+                    <a href="https://github.com/youruser/awesome-app" target="_blank">GitHub</a> |
+                    <a href="https://your-live-demo.app" target="_blank">Live Demo</a>
+                    </p>
+           </article>
+           </div>
+  <!-- Repeat a .project article per project -->
+        </section>
+
+
+
+
+        <!-- Section4:Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+
+            <div class="group">
+                <div class="text">
+                    You can contact me here. My email is masritimur2@gmail.com if you don't want to check.
+                    Just enter your email and your name and then enter your message.
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type = "submit">Send Message</button>
+                </form>
+            </div>
+
+        </section>
+     </main>
+     <a href="#top" class="back-to-top" aria-label="Back to top">⬆ Back to Top</a>
+     <script>
+         const toggle = document.getElementById('darkToggle');
+
+  
+     if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+     }
+
+     toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+ 
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+    }
+  });
+</script>
+</body>
+</html>
