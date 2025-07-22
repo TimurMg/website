@@ -21,8 +21,10 @@
     
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <h1>Full-Stack Developer Portfolio</h1>
     <!-- NavBar-->
+     <header>
      <nav id="top">
         
         <div class="left">
@@ -56,7 +58,8 @@
                 <span>Dark Mode</span>
             </i></button>
      </div>
-     <main>
+     </header>
+     <main id="main-content">
         <!-- Section1:Person -->
         <section class="person-section">
             <div class="text">
@@ -69,8 +72,8 @@
                         <span>Skills</span>
                     </a>
 
-                    <a href="#testimony">
-                        <i class="fa-solid fa-pen"></i>
+                    <a href="#projects">
+                        <i class="fa-solid folder-open"></i>
                         <span>Testimony</span>
                     </a>
 
@@ -124,6 +127,19 @@
                     <a href="https://your-live-demo.app" target="_blank">Live Demo</a>
                     </p>
            </article>
+           <article class="project">
+                <h3>My Awesome App</h3> 
+                <img src="images/awesome-app.png" loading="lazy" alt="Screenshot of My Awesome App">
+                    <p>A brief description of what it does and why it's cool.</p>
+                    <ul>
+                        <li><strong>Tech:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Challenge:</strong> Building a fully responsive grid</li>
+                    </ul>
+                    <p>
+                    <a href="https://github.com/youruser/awesome-app" target="_blank">GitHub</a> |
+                    <a href="https://your-live-demo.app" target="_blank">Live Demo</a>
+                    </p>
+           </article>
            </div>
   <!-- Repeat a .project article per project -->
         </section>
@@ -158,6 +174,13 @@
 
         </section>
      </main>
+     <footer>
+            <p>© 2025 Timur Masri. Built with ❤️ using HTML & CSS.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/TimurMg" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:masritimur2@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+     </footer>
      <a href="#top" class="back-to-top" aria-label="Back to top">⬆ Back to Top</a>
      <script>
          const toggle = document.getElementById('darkToggle');

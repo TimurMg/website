@@ -16,6 +16,20 @@
     box-sizing: border-box;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--link-color);
+  color: var(--background-color);
+  padding: 0.5rem;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 100%;
@@ -302,11 +316,16 @@ nav .right a span{
         height: 18.75rem;
     }
 
-    /*Section 3:testimony*/
+    /*Section 3:projects*/
+    .projects-section {
+        text-align: center;            /* center the <h2> and paragraphs */
+        padding: 0 3.125rem;           /* same as your existing pattern */
+    }
     .projects-flex {
         flex-direction: column;
         align-items: center;
     }
+    
 
     /*Section 4:Contact*/
     .contact-section .group{
@@ -408,5 +427,17 @@ nav .right a span{
 
 #darkToggle:hover,
 #darkToggle:focus {
+  color: var(--link-color);
+}
+
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+.footer-socials a {
+  margin: 0 0.5rem;
   color: var(--link-color);
 }
