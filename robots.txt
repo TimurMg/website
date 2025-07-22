@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://timurmg.github.io/website/sitemap.xml
